@@ -1,0 +1,58 @@
+/* Simple collapsible sidebar styles */
+.sidebar-toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #4a69bd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-toggle-btn:hover {
+    background-color: #2c3e50;
+    transform: scale(1.1);
+}
+
+/* Default sidebar state */
+.sidebar {
+    transition: all 0.3s ease;
+}
+
+.main-content {
+    transition: all 0.3s ease;
+}
+
+/* Collapsed state */
+body.sidebar-collapsed .sidebar {
+    width: 70px !important;
+    padding: 15px 10px !important;
+}
+
+body.sidebar-collapsed .sidebar-header h2,
+body.sidebar-collapsed .sidebar-header p {
+    display: none !important;
+}
+
+body.sidebar-collapsed .sidebar-menu a span {
+    display: none !important;
+}
+
+body.sidebar-collapsed .sidebar-menu i {
+    margin-right: 0 !important;
+    font-size: 18px !important;
+}
+
+body.sidebar-collapsed .main-content {
+    margin-left: 70px !important;
+}

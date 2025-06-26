@@ -1,0 +1,145 @@
+/* Table spacing improvements */
+.compact-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.compact-table th,
+.compact-table td {
+    padding: 12px 10px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.compact-table tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.compact-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Action buttons row group */
+.btn-group-responsive {
+    display: inline-flex;
+    background-color: #f1f5f9;
+    border-radius: 4px;
+    padding: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+.btn-sm {
+    padding: 4px 6px;
+    margin: 0;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26px;
+    height: 26px;
+    border: none;
+}
+
+/* Remove space between buttons in group */
+.btn-group-responsive > a,
+.btn-group-responsive > .d-inline {
+    margin: 0;
+}
+
+/* Fix form display issues */
+.d-inline {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure consistent button sizes */
+.btn-sm i {
+    font-size: 14px;
+}
+
+/* Button colors */
+.btn-primary {
+    background-color: #4158D0;
+}
+
+.btn-warning {
+    background-color: #FF9800;
+}
+
+.btn-danger {
+    background-color: #FF416C;
+}
+
+/* Improve badge spacing */
+.badge {
+    padding: 5px 8px;
+    margin: 2px 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Improve text truncation */
+.text-truncate {
+    max-width: 100%;
+    padding: 2px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+/* Add zebra striping for better readability */
+.compact-table tbody tr:nth-child(even) {
+    background-color: #f9fafc;
+}
+
+.compact-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Improve column widths */
+.col-id {
+    width: 50px;
+}
+
+.col-user {
+    width: 120px;
+}
+
+.col-user .text-truncate {
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.col-status {
+    width: 100px;
+    text-align: center;
+}
+
+.col-time {
+    width: 100px;
+}
+
+.col-actions {
+    width: 120px;
+    white-space: nowrap;
+    text-align: center;
+    padding: 8px 5px;
+}
+
+/* Ensure all table cells have consistent alignment */
+.compact-table th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #4a5568;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Ensure consistent row heights */
+.compact-table tr {
+    height: 50px;
+}

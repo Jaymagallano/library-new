@@ -1,0 +1,111 @@
+/* Ultra HD Quality Icon Colors */
+
+/* Edit button icon */
+.btn-primary i.fa-edit {
+  color: #ffffff;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Search button icon */
+.btn-secondary i.fa-search {
+  color: #ffffff;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Deactivate button icon */
+.btn-warning i.fa-user-slash {
+  color: #ffffff;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Delete button icon */
+.btn-danger i.fa-trash {
+  color: #ffffff;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Button styling with glass morphism */
+.btn-primary {
+  background: linear-gradient(135deg, #4158D0, #3243a9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 5px rgba(65, 88, 208, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #6c757d, #495057) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 5px rgba(108, 117, 125, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(5px) !important;
+  color: white !important;
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #FF9800, #F57C00) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 5px rgba(255, 152, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #FF416C, #FF4B2B) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 5px rgba(255, 65, 108, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+/* Button hover effects with animation */
+.btn-primary:hover {
+  background: linear-gradient(135deg, #3243a9, #4158D0) !important;
+  box-shadow: 0 4px 8px rgba(65, 88, 208, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #495057, #6c757d) !important;
+  box-shadow: 0 4px 8px rgba(108, 117, 125, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-warning:hover {
+  background: linear-gradient(135deg, #F57C00, #FF9800) !important;
+  box-shadow: 0 4px 8px rgba(255, 152, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #FF4B2B, #FF416C) !important;
+  box-shadow: 0 4px 8px rgba(255, 65, 108, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Button group styling with glass effect */
+.btn-group-responsive {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 6px !important;
+  padding: 3px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Button transitions */
+.btn-sm {
+  transition: all 0.2s ease-in-out !important;
+  min-width: 32px !important;
+  height: 32px !important;
+  padding: 6px 10px !important;
+  position: relative !important;
+  z-index: 5 !important;
+  cursor: pointer !important;
+}
+
+/* Button active state */
+.btn-sm:active {
+  transform: translateY(1px) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+}

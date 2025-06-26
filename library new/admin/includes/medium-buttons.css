@@ -1,0 +1,27 @@
+/* Medium-sized action buttons */
+.btn-sm {
+  min-width: 32px !important;
+  height: 32px !important;
+  padding: 6px 10px !important;
+  font-size: 13px !important;
+}
+
+.btn-sm i {
+  font-size: 13px !important;
+}
+
+/* Adjust action column width */
+.col-actions {
+  width: 140px !important;
+}
+
+/* Adjust button group spacing */
+.btn-group-responsive {
+  padding: 4px !important;
+}
+
+/* Ensure proper vertical alignment */
+.compact-table td.col-actions {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}

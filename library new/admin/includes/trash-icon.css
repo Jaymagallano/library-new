@@ -1,0 +1,36 @@
+/* High-quality trash icon styling with enhanced colors */
+.fa-trash {
+  background: linear-gradient(135deg, #ff0a54, #ff5c8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  text-shadow: 0 0 15px rgba(255, 10, 84, 0.6);
+  filter: drop-shadow(0 2px 3px rgba(255, 92, 138, 0.4));
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Keep button icons white with enhanced glow */
+.btn-danger .fa-trash,
+.btn-primary .fa-trash,
+.btn-secondary .fa-trash,
+.btn-warning .fa-trash,
+.btn-success .fa-trash {
+  background: none;
+  color: white !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+}
+
+.btn-danger:hover .fa-trash {
+  transform: scale(1.2);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.7);
+  animation: pulse 1s infinite;
+}
+
+/* Add pulsing animation for hover effect */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}

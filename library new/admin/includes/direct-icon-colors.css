@@ -1,0 +1,29 @@
+/* Direct icon colors with !important to override any existing styles */
+
+/* Dashboard icons */
+.fa-users { color: #4361ee !important; }
+.fa-book { color: #3a86ff !important; }
+.fa-exchange-alt { color: #7209b7 !important; }
+.fa-bookmark { color: #4cc9f0 !important; }
+.fa-chart-bar { color: #fb8500 !important; }
+.fa-cog { color: #560bad !important; }
+.fa-tachometer-alt { color: #560bad !important; }
+.fa-info-circle { color: #4895ef !important; }
+.fa-sign-in-alt { color: #4361ee !important; }
+.fa-exclamation-triangle { color: #e63946 !important; }
+.fa-user-edit { color: #fb8500 !important; }
+.fa-plus { color: #ffffff !important; }
+.fa-save { color: #ffffff !important; }
+.fa-spinner { color: #ffffff !important; }
+.fa-trash { color: #ffffff !important; }
+.fa-edit { color: #ffffff !important; }
+.fa-user-slash { color: #ffffff !important; }
+
+/* Button icons need to stay white */
+.btn-primary i, 
+.btn-secondary i, 
+.btn-warning i, 
+.btn-danger i, 
+.btn-success i { 
+  color: #ffffff !important; 
+}

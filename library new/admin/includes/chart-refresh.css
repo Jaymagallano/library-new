@@ -1,0 +1,38 @@
+/* Chart refresh button styling */
+.refresh-chart {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: linear-gradient(135deg, #4158D0, #3243a9);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 0 2px 5px rgba(65, 88, 208, 0.3);
+  transition: all 0.2s ease;
+}
+
+.refresh-chart:hover {
+  background: linear-gradient(135deg, #3243a9, #4158D0);
+  box-shadow: 0 4px 8px rgba(65, 88, 208, 0.4);
+  transform: translateY(-1px);
+}
+
+.refresh-chart i {
+  margin-right: 5px;
+}
+
+/* Loading spinner */
+.fa-spinner {
+  font-size: 24px;
+  color: #4158D0;
+  margin-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}

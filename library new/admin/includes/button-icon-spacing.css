@@ -1,0 +1,19 @@
+/* Add spacing between button icons and text */
+.btn-primary i,
+.btn-secondary i,
+.btn-danger i,
+.btn-warning i,
+.btn-success i {
+  margin-right: 8px;
+}
+
+/* Ensure consistent alignment */
+.btn-primary,
+.btn-secondary,
+.btn-danger,
+.btn-warning,
+.btn-success {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

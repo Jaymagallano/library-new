@@ -1,0 +1,79 @@
+/* Make all text smaller in tables */
+.compact-table {
+  font-size: 12px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.compact-table th {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 8px;
+  height: 32px;
+}
+
+.compact-table td {
+  font-size: 12px;
+  padding: 4px 8px;
+  height: 36px;
+}
+
+/* Fix table spacing */
+.table-container {
+  margin: 0;
+  padding: 0;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/* Make badge text smaller */
+.badge {
+  font-size: 11px !important;
+  padding: 2px 5px !important;
+  margin: 0 !important;
+  display: inline-block;
+}
+
+/* Make button text smaller */
+.btn-sm {
+  font-size: 13px !important;
+}
+
+.btn-sm i {
+  font-size: 13px !important;
+}
+
+/* Make card header text smaller */
+.card-header h2 {
+  font-size: 16px !important;
+}
+
+/* Make form control text smaller */
+.form-control {
+  font-size: 12px !important;
+}
+
+/* Make summary text smaller */
+.summary {
+  font-size: 12px !important;
+}
+
+/* Fix text truncation spacing */
+.text-truncate {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+/* Remove extra whitespace */
+.compact-table tr {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix card footer spacing */
+.card-footer {
+  padding: 8px 10px;
+}

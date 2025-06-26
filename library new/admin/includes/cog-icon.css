@@ -1,0 +1,20 @@
+/* High-quality cog icon styling */
+.fa-cog {
+  background: linear-gradient(135deg, #560bad, #480ca8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  text-shadow: 0 0 15px rgba(86, 11, 173, 0.5);
+  filter: drop-shadow(0 2px 3px rgba(72, 12, 168, 0.3));
+}
+
+/* Keep button icons white */
+.btn-primary .fa-cog,
+.btn-secondary .fa-cog,
+.btn-warning .fa-cog,
+.btn-danger .fa-cog,
+.btn-success .fa-cog {
+  background: none;
+  color: white !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}

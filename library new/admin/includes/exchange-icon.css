@@ -1,0 +1,44 @@
+/* High-quality exchange icon styling with enhanced colors */
+.fa-exchange-alt {
+  background: linear-gradient(135deg, #9d4edd, #7b2cbf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  text-shadow: 0 0 15px rgba(157, 78, 221, 0.6);
+  filter: drop-shadow(0 2px 3px rgba(123, 44, 191, 0.4));
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Enhanced styling for secondary button exchange icon */
+.btn-secondary .fa-exchange-alt {
+  background: none;
+  color: white !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover .fa-exchange-alt {
+  transform: scale(1.2);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.7);
+  animation: exchange-pulse 1s infinite;
+}
+
+/* Add pulsing animation for hover effect */
+@keyframes exchange-pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+/* Keep other button icons white */
+.btn-primary .fa-exchange-alt,
+.btn-warning .fa-exchange-alt,
+.btn-danger .fa-exchange-alt,
+.btn-success .fa-exchange-alt {
+  background: none;
+  color: white !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}

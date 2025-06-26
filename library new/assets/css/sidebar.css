@@ -1,0 +1,187 @@
+/* Collapsible Sidebar Styles */
+.sidebar {
+    width: 220px;
+    min-width: 200px;
+    max-width: 240px;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    color: #fff;
+    padding: 16px 10px 16px 18px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 100;
+    transition: all 0.3s cubic-bezier(.4,0,.2,1);
+    font-size: 13px;
+    font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+    letter-spacing: 0.01em;
+    box-shadow: 0 4px 24px rgba(74, 105, 189, 0.10);
+}
+
+.sidebar.collapsed {
+    width: 70px;
+    padding: 15px 10px;
+}
+
+.sidebar.collapsed .sidebar-header h2,
+.sidebar.collapsed .sidebar-header p {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-menu a span {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-menu i {
+    margin-right: 0;
+    font-size: 18px;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.main-content.expanded {
+    margin-left: 70px;
+}
+
+.toggle-sidebar {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    z-index: 101;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    font-size: 16px;
+    outline: none;
+    padding: 0;
+}
+
+.sidebar.collapsed .toggle-sidebar {
+    right: -16px;
+}
+
+.toggle-sidebar:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.mobile-toggle:hover {
+    background: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+/* Animation for toggle icon */
+.toggle-sidebar i {
+    transition: transform 0.3s ease;
+}
+
+.sidebar.collapsed .toggle-sidebar i {
+    transform: rotate(180deg);
+}
+
+.mobile-toggle {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
+    font-size: 20px;
+    outline: none;
+    padding: 0;
+}
+
+/* Notification styles ultra-premium */
+.sidebar .notification {
+    font-size: 12px;
+    background: rgba(255,255,255,0.10);
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-shadow: 0 2px 8px rgba(74, 105, 189, 0.08);
+    letter-spacing: 0.01em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+        transform: translateX(-100%);
+    }
+    
+    .sidebar.collapsed {
+        width: 70px;
+        padding: 15px 10px;
+        transform: translateX(0);
+    }
+    
+    .sidebar-header h2, .sidebar-header p {
+        display: none;
+    }
+    
+    .sidebar-menu a span {
+        display: none;
+    }
+    
+    .sidebar-menu i {
+        margin-right: 0;
+        font-size: 18px;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .main-content.expanded {
+        margin-left: 70px;
+    }
+    
+    .toggle-sidebar {
+        display: none;
+    }
+    
+    .mobile-toggle {
+        display: flex;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 60px;
+        min-width: 60px;
+        max-width: 70px;
+        padding: 10px 4px;
+        font-size: 11px;
+    }
+    .sidebar .sidebar-header h2,
+    .sidebar .sidebar-header p {
+        font-size: 12px;
+    }
+}

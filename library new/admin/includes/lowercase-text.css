@@ -1,0 +1,23 @@
+/* Make table text lowercase */
+.table th {
+  text-transform: lowercase;
+  font-size: 12px;
+}
+
+.table td {
+  text-transform: lowercase;
+  font-size: 12px;
+}
+
+.table .badge {
+  text-transform: lowercase;
+}
+
+.truncate {
+  text-transform: lowercase;
+}
+
+/* Preserve capitalization for specific elements */
+.btn-sm i {
+  text-transform: none;
+}

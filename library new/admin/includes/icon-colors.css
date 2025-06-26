@@ -1,0 +1,27 @@
+/* Simple icon colors */
+
+/* Dashboard icons */
+.stat-card .fa-users { color: #4361ee; }
+.stat-card .fa-book { color: #3a86ff; }
+.stat-card .fa-exchange-alt { color: #7209b7; }
+.stat-card .fa-bookmark { color: #4cc9f0; }
+
+/* Activity icons */
+.activity-icon .fa-sign-in-alt { color: #4361ee; }
+.activity-icon .fa-exclamation-triangle { color: #e63946; }
+.activity-icon .fa-user-edit { color: #fb8500; }
+.activity-icon .fa-book { color: #3a86ff; }
+.activity-icon .fa-exchange-alt { color: #7209b7; }
+.activity-icon .fa-bookmark { color: #4cc9f0; }
+.activity-icon .fa-tachometer-alt { color: #560bad; }
+.activity-icon .fa-info-circle { color: #4895ef; }
+
+/* Button icons */
+.btn-primary i { color: #ffffff; }
+.btn-secondary i { color: #ffffff; }
+.btn-warning i { color: #ffffff; }
+.btn-danger i { color: #ffffff; }
+.btn-success i { color: #ffffff; }
+
+/* Header icons */
+.header i { color: #ffffff; }

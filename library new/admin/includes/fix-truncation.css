@@ -1,0 +1,36 @@
+/* Fix text truncation in tables */
+.text-truncate {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Fix column widths */
+.compact-table {
+  table-layout: fixed;
+}
+
+/* Specific column styling */
+.col-user {
+  width: 120px;
+}
+
+.col-user .text-truncate {
+  font-weight: 500;
+}
+
+/* Fix table cell padding */
+.compact-table td {
+  padding: 8px 10px;
+  vertical-align: middle;
+}
+
+/* Fix action buttons alignment */
+.btn-group-responsive {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto;
+}

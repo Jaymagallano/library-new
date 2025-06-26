@@ -1,0 +1,281 @@
+/* Enhanced Responsive Design for Admin Panel */
+
+/* Base responsive container */
+.responsive-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Responsive grid system */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Responsive table layout */
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 100%;
+    scrollbar-width: thin;
+    border-radius: 8px;
+}
+
+.table-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.compact-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.compact-table th, 
+.compact-table td {
+    padding: 8px 10px;
+    white-space: nowrap;
+}
+
+.compact-table th {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Column width management */
+.col-id {
+    width: 40px;
+    max-width: 40px;
+}
+
+.col-time {
+    width: 90px;
+    max-width: 90px;
+}
+
+.col-user {
+    width: 120px;
+    max-width: 120px;
+}
+
+.col-action {
+    width: 100px;
+    max-width: 100px;
+}
+
+.col-status {
+    width: 80px;
+    max-width: 80px;
+}
+
+.col-actions {
+    width: 100px;
+    min-width: 100px;
+}
+
+/* Text truncation */
+.text-truncate {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+/* Responsive cards */
+.card-responsive {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.card-responsive .card-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-responsive .card-body {
+    padding: 15px;
+}
+
+.card-responsive .card-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+    background: #f9f9f9;
+}
+
+/* Responsive form elements */
+.form-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-responsive .form-group {
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+.form-responsive .form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Responsive buttons */
+.btn-group-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.btn-responsive {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* Responsive filters */
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-item {
+    flex: 1 1 150px;
+}
+
+/* Responsive layout for different screen sizes */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .card-responsive .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .card-responsive .card-header .header-actions {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .filters-container {
+        flex-direction: column;
+    }
+    
+    .filter-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .compact-table {
+        font-size: 0.85rem;
+    }
+    
+    .compact-table th, 
+    .compact-table td {
+        padding: 6px 8px;
+    }
+    
+    .btn-responsive {
+        padding: 5px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile-first approach for smallest screens */
+@media (max-width: 576px) {
+    .main-content {
+        padding: 10px;
+    }
+    
+    .card-responsive .card-header,
+    .card-responsive .card-body,
+    .card-responsive .card-footer {
+        padding: 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .header-actions button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .btn-group-responsive {
+        flex-direction: column;
+    }
+    
+    .btn-responsive {
+        width: 100%;
+    }
+}
+
+/* Ultra-premium: Liitan ang font ng dashboard at notification area */
+.main-content, .header, .card-header, .card-tools, .card-body, .card-footer, .notification, .alert, .summary-stats, .stat-card, .activity-chart-container {
+    font-size: 13px;
+    font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+    letter-spacing: 0.01em;
+}
+
+.header h1, .card-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.card-header, .card-tools {
+    padding: 10px 16px;
+}
+
+.notification, .alert {
+    font-size: 12px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}

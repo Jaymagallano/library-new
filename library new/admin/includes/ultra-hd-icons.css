@@ -1,0 +1,133 @@
+/* Ultra HD Icon Styling */
+
+/* Base icon enhancements */
+i.fas, i.far, i.fab {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  transform: scale(1.05);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Dashboard icons */
+.stat-card .fa-users {
+  color: #4361ee;
+  text-shadow: 0 0 10px rgba(67, 97, 238, 0.3);
+}
+
+.stat-card .fa-book {
+  color: #3a86ff;
+  text-shadow: 0 0 10px rgba(58, 134, 255, 0.3);
+}
+
+.stat-card .fa-exchange-alt {
+  color: #7209b7;
+  text-shadow: 0 0 10px rgba(114, 9, 183, 0.3);
+}
+
+.stat-card .fa-bookmark {
+  color: #4cc9f0;
+  text-shadow: 0 0 10px rgba(76, 201, 240, 0.3);
+}
+
+/* Action button icons */
+.btn-primary .fa-edit {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.btn-warning .fa-user-slash {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.btn-danger .fa-trash {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.btn-secondary .fa-exchange-alt {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary .fa-save {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Activity icons */
+.activity-icon .fa-sign-in-alt {
+  color: #4361ee;
+  text-shadow: 0 0 10px rgba(67, 97, 238, 0.3);
+}
+
+.activity-icon .fa-exclamation-triangle {
+  color: #e63946;
+  text-shadow: 0 0 10px rgba(230, 57, 70, 0.3);
+}
+
+.activity-icon .fa-user-edit {
+  color: #fb8500;
+  text-shadow: 0 0 10px rgba(251, 133, 0, 0.3);
+}
+
+.activity-icon .fa-book {
+  color: #3a86ff;
+  text-shadow: 0 0 10px rgba(58, 134, 255, 0.3);
+}
+
+/* Enhanced exchange icon with gradient and glow */
+.activity-icon .fa-exchange-alt,
+.fa-exchange-alt:not(.btn-primary *) {
+  background: linear-gradient(135deg, #7209b7, #560bad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 15px rgba(114, 9, 183, 0.5);
+  filter: drop-shadow(0 2px 3px rgba(114, 9, 183, 0.3));
+}
+
+.activity-icon .fa-bookmark {
+  color: #4cc9f0;
+  text-shadow: 0 0 10px rgba(76, 201, 240, 0.3);
+}
+
+.activity-icon .fa-tachometer-alt {
+  color: #560bad;
+  text-shadow: 0 0 10px rgba(86, 11, 173, 0.3);
+}
+
+.activity-icon .fa-info-circle {
+  color: #4895ef;
+  text-shadow: 0 0 10px rgba(72, 149, 239, 0.3);
+}
+
+/* Load more icon */
+.load-more-btn .fa-spinner {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Header icons */
+.header-actions .fa-plus {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.header .fa-users,
+.header .fa-book,
+.header .fa-exchange-alt,
+.header .fa-chart-bar,
+.header .fa-cog,
+.header .fa-history,
+.header .fa-tachometer-alt {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  margin-right: 10px;
+}
+
+/* Icon hover effects */
+.btn:hover i {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}

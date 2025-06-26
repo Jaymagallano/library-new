@@ -1,0 +1,54 @@
+/* Enhanced shadows for cards and elements */
+
+/* Card shadow */
+.card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Table shadow */
+.table-container {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Button group shadow */
+.btn-group-responsive {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Individual button shadows */
+.btn-sm {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Primary button shadow */
+.btn-primary {
+  box-shadow: 0 4px 10px rgba(65, 88, 208, 0.4) !important;
+}
+
+/* Secondary button shadow */
+.btn-secondary {
+  box-shadow: 0 4px 10px rgba(108, 117, 125, 0.4) !important;
+}
+
+/* Warning button shadow */
+.btn-warning {
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4) !important;
+}
+
+/* Danger button shadow */
+.btn-danger {
+  box-shadow: 0 4px 10px rgba(255, 65, 108, 0.4) !important;
+}
+
+/* Hover effects with enhanced shadows */
+.btn-sm:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Add shadow to badge */
+.badge {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}

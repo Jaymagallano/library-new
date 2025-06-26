@@ -1,0 +1,20 @@
+/* High-quality shield-alt icon styling */
+.fa-shield-alt {
+  background: linear-gradient(135deg, #2b9348, #55a630);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  text-shadow: 0 0 15px rgba(43, 147, 72, 0.5);
+  filter: drop-shadow(0 2px 3px rgba(85, 166, 48, 0.3));
+}
+
+/* Keep button icons white */
+.btn-primary .fa-shield-alt,
+.btn-secondary .fa-shield-alt,
+.btn-warning .fa-shield-alt,
+.btn-danger .fa-shield-alt,
+.btn-success .fa-shield-alt {
+  background: none;
+  color: white !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}

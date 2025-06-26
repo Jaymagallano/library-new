@@ -1,0 +1,20 @@
+/* High-quality bookmark icon styling */
+.fa-bookmark {
+  background: linear-gradient(135deg, #4cc9f0, #0096c7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  text-shadow: 0 0 15px rgba(76, 201, 240, 0.5);
+  filter: drop-shadow(0 2px 3px rgba(76, 201, 240, 0.3));
+}
+
+/* Keep button icons white */
+.btn-primary .fa-bookmark,
+.btn-secondary .fa-bookmark,
+.btn-warning .fa-bookmark,
+.btn-danger .fa-bookmark,
+.btn-success .fa-bookmark {
+  background: none;
+  color: white !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}

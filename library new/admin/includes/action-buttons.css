@@ -1,0 +1,30 @@
+/* Action buttons specific styling */
+.col-actions {
+    text-align: center !important;
+}
+
+.col-actions .btn-group-responsive {
+    display: inline-flex !important;
+    vertical-align: middle;
+}
+
+/* Fix form alignment issues */
+.col-actions form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure consistent button sizes */
+.btn-sm i {
+    font-size: 12px;
+}
+
+/* Ensure table rows have consistent height */
+.compact-table tr {
+    height: 46px;
+}
+
+/* Ensure table cells have consistent padding */
+.compact-table td {
+    padding: 6px 8px;
+}

@@ -1,0 +1,36 @@
+/* High-quality edit icon styling */
+.fa-edit {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  text-shadow: 0 0 15px rgba(0, 119, 182, 0.5);
+  filter: drop-shadow(0 2px 3px rgba(0, 180, 216, 0.3));
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Keep button icons white with enhanced glow */
+.btn-primary .fa-edit,
+.btn-secondary .fa-edit,
+.btn-warning .fa-edit,
+.btn-danger .fa-edit,
+.btn-success .fa-edit {
+  background: none;
+  color: white !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+}
+
+.btn-primary:hover .fa-edit {
+  transform: scale(1.2);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.7);
+  animation: edit-pulse 1s infinite;
+}
+
+/* Add pulsing animation for hover effect */
+@keyframes edit-pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
